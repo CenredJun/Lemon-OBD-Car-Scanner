@@ -1,0 +1,2521 @@
+
+═══════════════════════════════════════════════════
+TOYOTA (18 models)
+═══════════════════════════════════════════════════
+
+  📋 Vios (2008-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Corolla Cross (Gasoline) (2020-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Corolla Cross (Hybrid) (2020-2024) [HYBRID]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (4):
+       🔧 Hybrid Battery Voltage
+       🔧 Hybrid Battery SOC
+       🔧 Hybrid Battery Temperature
+       🔧 Electric Motor Output
+
+  📋 Fortuner (Gasoline, Old Gen) (2005-2015) [GASOLINE]
+     Standard PIDs (14):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Fortuner (Gasoline) (2016-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Fortuner (Diesel) (2005-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (4):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+       🔧 Diesel Particulate Filter Temp
+
+  📋 Innova (Gasoline) (2005-2024) [GASOLINE]
+     Standard PIDs (15):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Innova (Diesel) (2005-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (4):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+       🔧 Diesel Particulate Filter Temp
+
+  📋 Hilux (Gasoline) (2005-2024) [GASOLINE]
+     Standard PIDs (13):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Hilux (Diesel) (2005-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (4):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+       🔧 Diesel Particulate Filter Temp
+
+  📋 RAV4 (Gasoline) (2013-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 RAV4 (Hybrid) (2013-2024) [HYBRID]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (4):
+       🔧 Hybrid Battery Voltage
+       🔧 Hybrid Battery SOC
+       🔧 Hybrid Battery Temperature
+       🔧 Electric Motor Output
+
+  📋 Land Cruiser (2000-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (4):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+       🔧 Diesel Particulate Filter Temp
+
+  📋 Camry (Gasoline) (2006-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Camry (Hybrid) (2006-2024) [HYBRID]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (4):
+       🔧 Hybrid Battery Voltage
+       🔧 Hybrid Battery SOC
+       🔧 Hybrid Battery Temperature
+       🔧 Electric Motor Output
+
+  📋 Yaris (2006-2024) [GASOLINE]
+     Standard PIDs (14):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Rush (2018-2024) [GASOLINE]
+     Standard PIDs (15):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Wigo (2013-2024) [GASOLINE]
+     Standard PIDs (13):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+═══════════════════════════════════════════════════
+MITSUBISHI (8 models)
+═══════════════════════════════════════════════════
+
+  📋 Mirage (2013-2024) [GASOLINE]
+     Standard PIDs (15):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Mirage G4 (2014-2024) [GASOLINE]
+     Standard PIDs (15):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Montero Sport (2016-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (3):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+
+  📋 Strada (2019-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (3):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+
+  📋 Outlander (2016-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Eclipse Cross (2018-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 L300 (2000-2024) [GASOLINE]
+     Standard PIDs (8):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Galant (2004-2015) [GASOLINE]
+     Standard PIDs (15):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+═══════════════════════════════════════════════════
+NISSAN (8 models)
+═══════════════════════════════════════════════════
+
+  📋 Almera (2013-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Navara (2015-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (3):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+
+  📋 Terra (2018-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (3):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+
+  📋 X-Trail (2014-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Patrol (2010-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (2):
+       🔧 EGR Status
+       🔧 Turbo Boost Pressure
+
+  📋 Urvan (2012-2024) [DIESEL]
+     Standard PIDs (10):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (2):
+       🔧 EGR Status
+       🔧 Turbo Boost Pressure
+
+  📋 Sylphy (2013-2020) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 GT-R (2009-2022) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+═══════════════════════════════════════════════════
+SUZUKI (8 models)
+═══════════════════════════════════════════════════
+
+  📋 Ertiga (2012-2024) [GASOLINE]
+     Standard PIDs (15):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Vitara (2015-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Swift (2005-2024) [GASOLINE]
+     Standard PIDs (13):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Celerio (2015-2024) [GASOLINE]
+     Standard PIDs (13):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Jimny (2019-2024) [GASOLINE]
+     Standard PIDs (15):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Dzire (2017-2024) [GASOLINE]
+     Standard PIDs (15):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 APV (2005-2020) [GASOLINE]
+     Standard PIDs (8):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Ciaz (2015-2022) [GASOLINE]
+     Standard PIDs (15):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+═══════════════════════════════════════════════════
+HONDA (10 models)
+═══════════════════════════════════════════════════
+
+  📋 City (2002-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Civic (2002-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 CR-V (2002-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 BR-V (2016-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Jazz/Fit (2002-2020) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 HR-V (2015-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Accord (2003-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Brio (2012-2024) [GASOLINE]
+     Standard PIDs (13):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 WR-V (2023-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Pilot (2003-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+═══════════════════════════════════════════════════
+ISUZU (5 models)
+═══════════════════════════════════════════════════
+
+  📋 D-Max (2003-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (4):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+       🔧 Diesel Particulate Filter Temp
+
+  📋 mu-X (2014-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (4):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+       🔧 Diesel Particulate Filter Temp
+
+  📋 Crosswind (2000-2013) [DIESEL]
+     Standard PIDs (8):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 EGR Status
+
+  📋 Traviz (2016-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (4):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+       🔧 Diesel Particulate Filter Temp
+
+  📋 Sportivo (2004-2012) [DIESEL]
+     Standard PIDs (8):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 EGR Status
+
+═══════════════════════════════════════════════════
+MAZDA (9 models)
+═══════════════════════════════════════════════════
+
+  📋 Mazda2 (2007-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Mazda3 (2004-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Mazda6 (2003-2020) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 CX-3 (2016-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 CX-5 (Gasoline) (2013-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 CX-5 (Diesel) (2013-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (2):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+
+  📋 CX-8 (2018-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0A — Fuel Pressure
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 BT-50 (2007-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (4):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+       🔧 Diesel Particulate Filter Temp
+
+  📋 MX-5 (2006-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+═══════════════════════════════════════════════════
+FORD (8 models)
+═══════════════════════════════════════════════════
+
+  📋 Ranger (Gasoline) (2007-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Ranger (Diesel) (2007-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (3):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+
+  📋 Everest (2003-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (3):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+
+  📋 EcoSport (2014-2019) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 Explorer (2011-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 F-150 (2010-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 Mustang (2015-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 Territory (2020-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+═══════════════════════════════════════════════════
+HYUNDAI (9 models)
+═══════════════════════════════════════════════════
+
+  📋 Accent (2006-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Tucson (2010-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Santa Fe (Gasoline) (2007-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0A — Fuel Pressure
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Santa Fe (Diesel) (2007-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (3):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+
+  📋 Elantra (2004-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Creta (2021-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Staria (Gasoline) (2021-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0A — Fuel Pressure
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Staria (Diesel) (2021-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (3):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+
+  📋 Ioniq 5 (2022-2024) [ELECTRIC]
+     Standard PIDs (2):
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (6):
+       🔧 EV Battery Voltage
+       🔧 EV Battery SOC
+       🔧 EV Battery Temperature
+       🔧 EV Motor RPM
+       🔧 EV Range Remaining
+       🔧 Charging Status
+
+═══════════════════════════════════════════════════
+KIA (10 models)
+═══════════════════════════════════════════════════
+
+  📋 Picanto (2008-2024) [GASOLINE]
+     Standard PIDs (13):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Soluto (2019-2024) [GASOLINE]
+     Standard PIDs (15):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Rio (2006-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Sportage (Gasoline) (2005-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Sportage (Diesel) (2005-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (3):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+
+  📋 Sorento (Gasoline) (2003-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0A — Fuel Pressure
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Sorento (Diesel) (2003-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (3):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+
+  📋 Carnival (2015-2024) [DIESEL]
+     Standard PIDs (11):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (3):
+       🔧 EGR Status
+       🔧 DPF Soot Level
+       🔧 Turbo Boost Pressure
+
+  📋 Stinger (2018-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 EV6 (2022-2024) [ELECTRIC]
+     Standard PIDs (2):
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (6):
+       🔧 EV Battery Voltage
+       🔧 EV Battery SOC
+       🔧 EV Battery Temperature
+       🔧 EV Motor RPM
+       🔧 EV Range Remaining
+       🔧 Charging Status
+
+═══════════════════════════════════════════════════
+BYD (6 models)
+═══════════════════════════════════════════════════
+
+  📋 Atto 3 (2022-2024) [ELECTRIC]
+     Standard PIDs (2):
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (6):
+       🔧 EV Battery Voltage
+       🔧 EV Battery SOC
+       🔧 EV Battery Temperature
+       🔧 EV Motor RPM
+       🔧 EV Range Remaining
+       🔧 Charging Status
+
+  📋 Dolphin (2023-2024) [ELECTRIC]
+     Standard PIDs (2):
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (6):
+       🔧 EV Battery Voltage
+       🔧 EV Battery SOC
+       🔧 EV Battery Temperature
+       🔧 EV Motor RPM
+       🔧 EV Range Remaining
+       🔧 Charging Status
+
+  📋 Seal (2023-2024) [ELECTRIC]
+     Standard PIDs (2):
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (6):
+       🔧 EV Battery Voltage
+       🔧 EV Battery SOC
+       🔧 EV Battery Temperature
+       🔧 EV Motor RPM
+       🔧 EV Range Remaining
+       🔧 Charging Status
+
+  📋 Han (2023-2024) [ELECTRIC]
+     Standard PIDs (2):
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (6):
+       🔧 EV Battery Voltage
+       🔧 EV Battery SOC
+       🔧 EV Battery Temperature
+       🔧 EV Motor RPM
+       🔧 EV Range Remaining
+       🔧 Charging Status
+
+  📋 Tang (2023-2024) [HYBRID]
+     Standard PIDs (7):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x11 — Throttle Position
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (4):
+       🔧 EV Battery Voltage
+       🔧 EV Battery SOC
+       🔧 Hybrid Battery Temperature
+       🔧 Electric Motor Output
+
+  📋 F3 (2006-2020) [GASOLINE]
+     Standard PIDs (13):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+═══════════════════════════════════════════════════
+MG (8 models)
+═══════════════════════════════════════════════════
+
+  📋 MG5 (Gasoline) (2021-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 MG5 (Electric) (2021-2024) [ELECTRIC]
+     Standard PIDs (2):
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (6):
+       🔧 EV Battery Voltage
+       🔧 EV Battery SOC
+       🔧 EV Battery Temperature
+       🔧 EV Motor RPM
+       🔧 EV Range Remaining
+       🔧 Charging Status
+
+  📋 MG ZS (2018-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 MG ZS EV (2020-2024) [ELECTRIC]
+     Standard PIDs (2):
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (6):
+       🔧 EV Battery Voltage
+       🔧 EV Battery SOC
+       🔧 EV Battery Temperature
+       🔧 EV Motor RPM
+       🔧 EV Range Remaining
+       🔧 Charging Status
+
+  📋 MG HS (2020-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 MG RX5 (2020-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 MG One (2022-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 MG VS HEV (2023-2024) [HYBRID]
+     Standard PIDs (14):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (3):
+       🔧 Hybrid Battery Voltage
+       🔧 Hybrid Battery SOC
+       🔧 Electric Motor Output
+
+═══════════════════════════════════════════════════
+GEELY (6 models)
+═══════════════════════════════════════════════════
+
+  📋 Coolray (2020-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 Okavango (2021-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 Azkarra (2020-2024) [HYBRID]
+     Standard PIDs (15):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (4):
+       🔧 Hybrid Battery Voltage
+       🔧 Hybrid Battery SOC
+       🔧 Hybrid Battery Temperature
+       🔧 Electric Motor Output
+
+  📋 Emgrand (2013-2022) [GASOLINE]
+     Standard PIDs (13):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Tugella (2021-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 MK (2010-2020) [GASOLINE]
+     Standard PIDs (13):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+═══════════════════════════════════════════════════
+GAC MOTOR (8 models)
+═══════════════════════════════════════════════════
+
+  📋 GS3 (2020-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 GS4 (2016-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 GS8 (2017-2024) [GASOLINE]
+     Standard PIDs (18):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+       ✅ 0x49 — Accelerator Pedal Position
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 GM6 (2018-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 GA4 (2019-2024) [GASOLINE]
+     Standard PIDs (16):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (0):
+       — none —
+
+  📋 Emkoo (2023-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 Emzoom (2023-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+  📋 Empow (2023-2024) [GASOLINE]
+     Standard PIDs (17):
+       ✅ 0x04 — Engine Load
+       ✅ 0x05 — Coolant Temperature
+       ✅ 0x06 — Short Term Fuel Trim
+       ✅ 0x07 — Long Term Fuel Trim
+       ✅ 0x0B — Intake Manifold Pressure (MAP)
+       ✅ 0x0C — Engine RPM
+       ✅ 0x0D — Vehicle Speed
+       ✅ 0x0E — Timing Advance
+       ✅ 0x0F — Intake Air Temperature
+       ✅ 0x10 — MAF Air Flow Rate
+       ✅ 0x11 — Throttle Position
+       ✅ 0x14 — O2 Sensor Upstream
+       ✅ 0x15 — O2 Sensor Downstream
+       ✅ 0x1F — Engine Run Time
+       ✅ 0x2F — Fuel Tank Level
+       ✅ 0x33 — Barometric Pressure
+       ✅ 0x42 — Control Module Voltage
+     Manufacturer-Specific (1):
+       🔧 Turbo Boost Pressure
+
+═══════════════════════════════════════════════════
+SUMMARY
+═══════════════════════════════════════════════════
+  Total brands:            14
+  Total models:            121
+  Models with diesel params:  24
+  Models with hybrid params:  6
+  Models with EV params:      9
+  Models with turbo params:   43
+  Most PIDs:   Nissan GT-R with 18 PIDs
+  Fewest PIDs: Hyundai Ioniq 5 with 2 PIDs
+  Average PIDs per model:  14.0
+
+═══════════════════════════════════════════════════
+POTENTIAL ISSUES
+═══════════════════════════════════════════════════
+
+  ⚠️  Models with 0 standard PIDs (EV only):
+       — none —
+
+  ⚠️  Models with fewer than 5 standard PIDs (very limited):
+       • Hyundai Ioniq 5
+       • Kia EV6
+       • BYD Atto 3
+       • BYD Dolphin
+       • BYD Seal
+       • BYD Han
+       • MG MG5 (Electric)
+       • MG MG ZS EV
+
+  ⚠️  Models with BOTH MAF (0x10) and MAP (0x0B):
+       (common on modern turbo engines — review, not always wrong)
+       • Mitsubishi Eclipse Cross
+       • Nissan GT-R
+       • Honda CR-V
+       • Ford EcoSport
+       • Ford Explorer
+       • Ford F-150
+       • Ford Mustang
+       • Ford Territory
+       • Kia Stinger
+       • MG MG HS
+       • MG MG RX5
+       • MG MG One
+       • Geely Coolray
+       • Geely Okavango
+       • Geely Tugella
+       • GAC Motor GS3
+       • GAC Motor GS4
+       • GAC Motor GS8
+       • GAC Motor GM6
+       • GAC Motor Emkoo
+       • GAC Motor Emzoom
+       • GAC Motor Empow
+
+  ⚠️  Models with O2 Downstream (0x15) but NO O2 Upstream (0x14):
+       (physically impossible — flag as data error)
+       — none —
+
+═══════════════════════════════════════════════════
+END OF REPORT
+═══════════════════════════════════════════════════
