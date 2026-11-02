@@ -796,6 +796,39 @@ class VehicleDatabase {
             supportedParameterIds: [..._pidF, ..._mTurbo]),
       ],
     ),
+    // ===================================================================
+    // JAC (N-series light trucks, HFC4DA1 common-rail diesel)
+    // ===================================================================
+    VehicleBrand(
+      name: 'JAC',
+      logoEmoji: '\u{1F69A}',
+      models: [
+        VehicleModel(name: 'Prince FB Body', years: _years(2018, 2025),
+            engineType: 'diesel',
+            supportedParameterIds: [..._pidDiesel, ..._mEgrTurbo]),
+        VehicleModel(name: 'Prince Aluminum Van', years: _years(2018, 2025),
+            engineType: 'diesel',
+            supportedParameterIds: [..._pidDiesel, ..._mEgrTurbo]),
+        VehicleModel(name: 'Prince Cab & Chassis', years: _years(2018, 2025),
+            engineType: 'diesel',
+            supportedParameterIds: [..._pidDiesel, ..._mEgrTurbo]),
+        VehicleModel(name: 'Prince Dropside', years: _years(2018, 2025),
+            engineType: 'diesel',
+            supportedParameterIds: [..._pidDiesel, ..._mEgrTurbo]),
+        VehicleModel(name: 'Queen Aluminum Body', years: _years(2018, 2025),
+            engineType: 'diesel',
+            supportedParameterIds: [..._pidDiesel, ..._mEgrTurbo]),
+        VehicleModel(name: 'Queen Dropside', years: _years(2018, 2025),
+            engineType: 'diesel',
+            supportedParameterIds: [..._pidDiesel, ..._mEgrTurbo]),
+        VehicleModel(name: 'Queen Cab & Chassis', years: _years(2018, 2025),
+            engineType: 'diesel',
+            supportedParameterIds: [..._pidDiesel, ..._mEgrTurbo]),
+        VehicleModel(name: 'King Aluminum Body', years: _years(2018, 2025),
+            engineType: 'diesel',
+            supportedParameterIds: [..._pidDiesel, ..._mEgrTurbo]),
+      ],
+    ),
   ];
 
   /// Looks up a brand by name (case-insensitive).

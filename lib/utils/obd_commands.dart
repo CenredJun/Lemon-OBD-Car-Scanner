@@ -33,6 +33,19 @@ class ObdCommands {
   static const int pidAmbientAirTemp = 0x46;
   static const int pidAcceleratorPedal = 0x49;
 
+  // Distance counters (km). Read occasionally, not every polling cycle.
+  static const int pidDistanceWithMil = 0x21;
+  static const int pidDistanceSinceCleared = 0x31;
+  static const int pidOdometer = 0xA6;
+
+  /// Slow-changing distance counters. Shown as a text card on the dashboard
+  /// instead of gauges, and polled less often than live sensor PIDs.
+  static const Set<int> distancePids = {
+    pidOdometer,
+    pidDistanceSinceCleared,
+    pidDistanceWithMil,
+  };
+
   /// Every standard OBD-II PID the app knows how to decode and display.
   /// This is the master catalogue both the Dashboard and Live Data screens
   /// draw from; which of these are actually shown is decided solely by
@@ -218,6 +231,35 @@ class ObdCommands {
       requiredBytes: 1,
       formula: (b) => b[0] * 100.0 / 255.0,
     ),
+    PidInfo(
+      pid: pidOdometer,
+      name: 'Odometer',
+      unit: 'km',
+      minValue: 0,
+      maxValue: 999999,
+      requiredBytes: 4,
+      // (A·2^24 + B·2^16 + C·2^8 + D) / 10
+      formula: (b) =>
+          ((b[0] * 16777216) + (b[1] * 65536) + (b[2] * 256) + b[3]) / 10.0,
+    ),
+    PidInfo(
+      pid: pidDistanceSinceCleared,
+      name: 'Distance Since Codes Cleared',
+      unit: 'km',
+      minValue: 0,
+      maxValue: 65535,
+      requiredBytes: 2,
+      formula: (b) => ((b[0] * 256) + b[1]).toDouble(),
+    ),
+    PidInfo(
+      pid: pidDistanceWithMil,
+      name: 'Distance With Check Engine On',
+      unit: 'km',
+      minValue: 0,
+      maxValue: 65535,
+      requiredBytes: 2,
+      formula: (b) => ((b[0] * 256) + b[1]).toDouble(),
+    ),
   ];
 
   /// Display priority order shared by the Dashboard gauges and the Live Data
@@ -243,7 +285,10 @@ class ObdCommands {
     pidO2Sensor2Voltage, // O2 Downstream
     pidBarometricPressure, // Barometric Pressure
     pidControlModuleVoltage, // Control Module Voltage
-    pidEngineRunTime, // Engine Run Time     — last always
+    pidEngineRunTime, // Engine Run Time
+    pidOdometer, // Odometer
+    pidDistanceSinceCleared, // Distance since codes cleared
+    pidDistanceWithMil, // Distance with check engine light on
   ];
 
   /// Comparator that orders two PIDs by [pidDisplayPriority]. Pass to

@@ -222,7 +222,9 @@ class ObdService {
     //   PID 0x40 → bitmask for PIDs 0x41 to 0x60
     //   PID 0x60 → bitmask for PIDs 0x61 to 0x80
     final List<int> supported = [];
-    final List<int> rangeStarters = [0x00, 0x20, 0x40, 0x60];
+    //   PID 0x80 → bitmask for PIDs 0x81 to 0xA0
+    //   PID 0xA0 → bitmask for PIDs 0xA1 to 0xC0 (odometer is 0xA6)
+    final List<int> rangeStarters = [0x00, 0x20, 0x40, 0x60, 0x80, 0xA0];
 
     for (final rangeStart in rangeStarters) {
       try {
@@ -254,10 +256,7 @@ class ObdService {
           if (isSupported) {
             // Don't include the range-starter PIDs themselves
             // (0x00, 0x20, 0x40, 0x60) in the result.
-            if (pidNumber != 0x00 &&
-                pidNumber != 0x20 &&
-                pidNumber != 0x40 &&
-                pidNumber != 0x60) {
+            if (pidNumber % 0x20 != 0) {
               supported.add(pidNumber);
             }
           }
@@ -266,7 +265,7 @@ class ObdService {
         // If PID rangeStart+0x20 is NOT supported, the next range won't
         // have data either — stop early.
         final nextRangeSupported = (bitmask & 1) == 1;
-        if (!nextRangeSupported && rangeStart != 0x60) {
+        if (!nextRangeSupported && rangeStart != rangeStarters.last) {
           break;
         }
       } catch (e) {
@@ -279,6 +278,96 @@ class ObdService {
     // our known PID list from ObdCommands).
     final knownPids = ObdCommands.supportedPids.map((p) => p.pid).toSet();
     return supported.where((pid) => knownPids.contains(pid)).toList();
+  }
+
+  // ---------------------------------------------------------------------
+  // Inspection requests (one-shot, not part of the live polling loop)
+  // ---------------------------------------------------------------------
+
+  /// Reads the 17-character VIN (Mode 09 PID 02). Returns `null` when the
+  /// car does not report it.
+  ///
+  /// Works for both CAN multi-frame replies ("014 / 0:490201… / 1:…") and
+  /// older protocols (five "4902 0N …" lines) by collecting every data
+  /// byte and keeping only characters that are valid in a VIN. VINs never
+  /// contain I, O or Q, which also drops the 0x49 ('I') service byte.
+  Future<String?> requestVin() async {
+    final raw = await sendRaw('0902', timeout: const Duration(seconds: 6));
+    final upper = raw.toUpperCase();
+    if (upper.contains('NODATA') || upper.contains('NO DATA')) return null;
+
+    final bytes = <int>[];
+    for (var line in raw.split(RegExp(r'[\r\n]+'))) {
+      line = line.replaceAll(' ', '').replaceAll('>', '').toUpperCase();
+      if (line.isEmpty || _isErrorPayload(line)) continue;
+      // CAN frame index prefix, e.g. "0:" / "1:" / "2:".
+      line = line.replaceFirst(RegExp(r'^[0-9A-F]:'), '');
+      // Lone byte-count line of a CAN multi-frame reply, e.g. "014".
+      if (line.length == 3) continue;
+      bytes.addAll(_hexToBytes(line));
+    }
+
+    final buf = StringBuffer();
+    for (final b in bytes) {
+      final isDigit = b >= 0x30 && b <= 0x39;
+      final isLetter = b >= 0x41 && b <= 0x5A;
+      if ((isDigit || isLetter) && b != 0x49 && b != 0x4F && b != 0x51) {
+        buf.writeCharCode(b);
+      }
+    }
+    final chars = buf.toString();
+    if (chars.length < 17) return null;
+    return chars.substring(chars.length - 17);
+  }
+
+  /// Battery voltage measured by the ELM327 itself on OBD pin 16
+  /// ("ATRV"). Works on every car, engine on or off.
+  Future<double?> readAdapterVoltage() async {
+    final raw = await sendRaw('ATRV', timeout: const Duration(seconds: 3));
+    final m = RegExp(r'(\d+(?:\.\d+)?)\s*V', caseSensitive: false)
+        .firstMatch(raw);
+    if (m == null) return null;
+    return double.tryParse(m.group(1)!);
+  }
+
+  /// Permanent DTCs (Mode 0A). These cannot be erased with a scan tool;
+  /// the ECU clears them itself once the fault is confirmed fixed.
+  Future<List<String>> requestPermanentDtcs() async {
+    final raw = await sendRaw('0A', timeout: const Duration(seconds: 4));
+    return _parseDtcResponse(raw, mode: 0x4A);
+  }
+
+  /// The DTC that caused freeze frame 0 to be stored (Mode 02 PID 02), or
+  /// `null` when no freeze frame exists.
+  Future<String?> requestFreezeFrameDtc() async {
+    final raw =
+        await sendRaw('020200', timeout: const Duration(seconds: 3));
+    final cleaned = _cleanResponse(raw);
+    if (cleaned.contains('NODATA') || _isErrorPayload(cleaned)) return null;
+    final idx = cleaned.indexOf('4202');
+    if (idx < 0) return null;
+    // After "4202": frame number byte ("00"), then the 2-byte DTC.
+    final rest = cleaned.substring(idx + 4);
+    if (rest.length < 6) return null;
+    return _decodeDtcCodeBytes(rest.substring(2, 6));
+  }
+
+  /// Raw data bytes of [pid] from freeze frame 0 (Mode 02), or `null` when
+  /// the ECU did not store that PID.
+  Future<List<int>?> requestFreezeFramePid(int pid) async {
+    final hex = pid.toRadixString(16).padLeft(2, '0').toUpperCase();
+    final raw =
+        await sendRaw('02${hex}00', timeout: const Duration(seconds: 2));
+    final cleaned = _cleanResponse(raw);
+    if (cleaned.contains('NODATA') || _isErrorPayload(cleaned)) return null;
+    final marker = '42$hex';
+    final idx = cleaned.indexOf(marker);
+    if (idx < 0) return null;
+    // Skip the frame number byte that follows the PID.
+    final data = cleaned.substring(idx + marker.length);
+    if (data.length < 4) return null;
+    final bytes = _hexToBytes(data.substring(2));
+    return bytes.isEmpty ? null : bytes;
   }
 
   Future<List<String>> requestDtcs() async {

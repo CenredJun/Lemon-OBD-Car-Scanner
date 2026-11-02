@@ -57,6 +57,11 @@ class OBDProvider extends ChangeNotifier {
 
   Timer? _pollTimer;
   bool _polling = false;
+
+  /// Counts polling cycles so slow distance PIDs are only read every
+  /// [_distancePollEvery] cycles.
+  int _pollCount = 0;
+  static const int _distancePollEvery = 20;
   late final StreamSubscription<ObdConnectionState> _stateSub;
 
   static const String _prefsIp = 'obd.ip';
@@ -159,6 +164,8 @@ class OBDProvider extends ChangeNotifier {
     _demoTick = 0;
     _unsupportedPids.clear();
     _pidErrorCount.clear();
+    // Show the distance counters in demo mode too.
+    _enabledPids.addAll(ObdCommands.distancePids);
     for (final s in _stats.values) {
       s.reset();
     }
@@ -256,6 +263,10 @@ class OBDProvider extends ChangeNotifier {
     // Ambient air temp: stable around 30-35°C.
     final ambient = 33.0 + (sin(_demoTick * 0.02) * 2.0);
 
+    // Distance counters: odometer creeps up slowly, no check-engine distance.
+    final odometer = 45210.0 + (t * 0.01);
+    final sinceCleared = 1280.0 + (t * 0.01).floorToDouble();
+
     // MAF air flow: low at idle, rises with engine speed / load.
     final maf = idling
         ? 3.0 + (sin(t * 0.3) * 0.8)
@@ -286,6 +297,9 @@ class OBDProvider extends ChangeNotifier {
       ObdCommands.pidAmbientAirTemp: ambient,
       ObdCommands.pidMafAirFlow: maf,
       ObdCommands.pidAcceleratorPedal: accelPedal,
+      ObdCommands.pidOdometer: odometer,
+      ObdCommands.pidDistanceSinceCleared: sinceCleared,
+      ObdCommands.pidDistanceWithMil: 0.0,
     };
 
     for (final pid in ObdCommands.supportedPids) {
@@ -484,11 +498,16 @@ class OBDProvider extends ChangeNotifier {
     if (_polling) return;
     if (!_service.isConnected) return;
     _polling = true;
+    final readDistances = _pollCount % _distancePollEvery == 0;
+    _pollCount++;
     try {
       final pidsToPoll = ObdCommands.supportedPids
           .where((p) =>
               _enabledPids.contains(p.pid) &&
-              !_unsupportedPids.contains(p.pid))
+              !_unsupportedPids.contains(p.pid) &&
+              (!ObdCommands.distancePids.contains(p.pid) ||
+                  readDistances ||
+                  !(_stats[p.pid]?.hasData ?? false)))
           .toList(growable: false);
 
       bool changed = false;

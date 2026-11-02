@@ -65,7 +65,8 @@ class DtcCardWidget extends StatelessWidget {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  '${dtc.systemName} • ${dtc.status.name.toUpperCase()}',
+                  '${dtc.systemName} • ${dtc.status.name.toUpperCase()}'
+                  '${dtc.manufacturer != null ? ' • ${dtc.manufacturer!.toUpperCase()}-SPECIFIC' : ''}',
                   style: const TextStyle(
                     color: Colors.white38,
                     fontSize: 11,

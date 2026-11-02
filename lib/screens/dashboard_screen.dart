@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../models/obd_data.dart';
+import '../models/pid_info.dart';
 import '../providers/obd_provider.dart';
 import '../utils/obd_commands.dart';
 import '../widgets/connection_status_widget.dart';
@@ -46,7 +47,16 @@ class DashboardScreen extends StatelessWidget {
     // SINGLE SOURCE OF TRUTH: the PIDs shown are exactly those enabled in the
     // provider (auto-detected from the car, vehicle database, or demo mode).
     final enabledPids = ObdCommands.supportedPids
-        .where((pid) => obd.isPidEnabled(pid.pid))
+        .where((pid) =>
+            obd.isPidEnabled(pid.pid) &&
+            !ObdCommands.distancePids.contains(pid.pid))
+        .toList();
+    // Distance counters are shown as text, not gauges.
+    final distancePids = ObdCommands.supportedPids
+        .where((pid) =>
+            obd.isPidEnabled(pid.pid) &&
+            !obd.isPidUnsupported(pid.pid) &&
+            ObdCommands.distancePids.contains(pid.pid))
         .toList();
     // Same priority order as the Live Data screen so the two stay aligned.
     enabledPids.sort(
@@ -66,6 +76,8 @@ class DashboardScreen extends StatelessWidget {
             for (final pid in enabledPids) _buildGauge(obd, pid.pid),
           ],
         ),
+        if (distancePids.isNotEmpty)
+          _DistanceSection(obd: obd, pids: distancePids),
         if (obd.manufacturerParams.isNotEmpty)
           _ManufacturerParamsSection(params: obd.manufacturerParams),
         Padding(
@@ -235,6 +247,79 @@ class _PidDetectionBannerState extends State<_PidDetectionBanner> {
 
 /// Informational list of manufacturer-specific parameters that the selected
 /// vehicle exposes but which cannot be read over generic OBD-II.
+/// Odometer and distance counters, shown as plain text rows.
+class _DistanceSection extends StatelessWidget {
+  final OBDProvider obd;
+  final List<PidInfo> pids;
+  const _DistanceSection({required this.obd, required this.pids});
+
+  static String _formatKm(double km, {bool decimals = false}) {
+    final fixed = km.toStringAsFixed(decimals ? 1 : 0);
+    final parts = fixed.split('.');
+    final whole = parts[0].replaceAllMapped(
+        RegExp(r'(\d)(?=(\d{3})+$)'), (m) => '${m[1]},');
+    return parts.length > 1 ? '$whole.${parts[1]}' : whole;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(top: 12),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: const Color(0xFF222222),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Row(
+            children: [
+              Icon(Icons.speed, color: Color(0xFFFF8C00), size: 18),
+              SizedBox(width: 8),
+              Text(
+                'Distance',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          for (final pid in pids)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 4),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      pid.name,
+                      style: const TextStyle(
+                          color: Colors.white70, fontSize: 13),
+                    ),
+                  ),
+                  Text(
+                    obd.statsFor(pid.pid).hasData
+                        ? '${_formatKm(obd.statsFor(pid.pid).current, decimals: pid.pid == ObdCommands.pidOdometer)} ${pid.unit}'
+                        : 'Reading…',
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600,
+                      fontFamily: 'monospace',
+                    ),
+                  ),
+                ],
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
 class _ManufacturerParamsSection extends StatelessWidget {
   final List<String> params;
   const _ManufacturerParamsSection({required this.params});

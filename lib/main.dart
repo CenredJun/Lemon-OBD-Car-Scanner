@@ -3,11 +3,13 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
 
 import 'providers/dtc_provider.dart';
+import 'providers/inspection_provider.dart';
 import 'providers/obd_provider.dart';
 import 'providers/vehicle_provider.dart';
 import 'screens/brand_selection_screen.dart';
 import 'screens/dashboard_screen.dart';
 import 'screens/fault_codes_screen.dart';
+import 'screens/inspection_screen.dart';
 import 'screens/live_data_screen.dart';
 import 'screens/settings_screen.dart';
 
@@ -32,6 +34,10 @@ class Obd2ScannerApp extends StatelessWidget {
         ChangeNotifierProxyProvider<OBDProvider, DTCProvider>(
           create: (ctx) => DTCProvider(ctx.read<OBDProvider>()),
           update: (_, obd, prev) => prev ?? DTCProvider(obd),
+        ),
+        ChangeNotifierProxyProvider<OBDProvider, InspectionProvider>(
+          create: (ctx) => InspectionProvider(ctx.read<OBDProvider>()),
+          update: (_, obd, prev) => prev ?? InspectionProvider(obd),
         ),
       ],
       child: MaterialApp(
@@ -146,6 +152,7 @@ class _RootShellState extends State<RootShell> {
   static const _screens = [
     DashboardScreen(),
     FaultCodesScreen(),
+    InspectionScreen(),
     LiveDataScreen(),
     SettingsScreen(),
   ];
@@ -179,6 +186,9 @@ class _RootShellState extends State<RootShell> {
           BottomNavigationBarItem(
               icon: Icon(Icons.warning_amber),
               label: 'Fault Codes'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.fact_check_outlined),
+              label: 'Inspect'),
           BottomNavigationBarItem(
               icon: Icon(Icons.show_chart), label: 'Live Data'),
           BottomNavigationBarItem(

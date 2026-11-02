@@ -1,3 +1,5 @@
+import 'manufacturer_dtcs.dart';
+
 class DtcDescriptions {
   static const Map<String, String> _common = {
     'P0010': 'A Camshaft Position Actuator Circuit (Bank 1)',
@@ -109,9 +111,18 @@ class DtcDescriptions {
     'U0155': 'Lost Communication With Instrument Panel Cluster (IPC) Control Module',
   };
 
-  static String lookup(String code) {
-    return _common[code.toUpperCase()] ?? _genericDescription(code);
+  /// Describes [code]. When [brand] is given, that manufacturer's own
+  /// definitions are checked first, then the generic SAE list.
+  static String lookup(String code, {String? brand}) {
+    final c = code.toUpperCase();
+    return ManufacturerDtcs.forBrand(brand)[c] ??
+        _common[c] ??
+        _genericDescription(code);
   }
+
+  /// `true` when [code] was resolved from [brand]'s manufacturer list.
+  static bool isManufacturerSpecific(String code, String? brand) =>
+      ManufacturerDtcs.forBrand(brand).containsKey(code.toUpperCase());
 
   static String _genericDescription(String code) {
     if (code.isEmpty) return 'Unknown trouble code';

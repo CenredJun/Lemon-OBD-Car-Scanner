@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../providers/dtc_provider.dart';
 import '../providers/obd_provider.dart';
+import '../providers/vehicle_provider.dart';
 import '../widgets/connection_status_widget.dart';
 import '../widgets/dtc_card_widget.dart';
 
@@ -41,7 +42,11 @@ class FaultCodesScreen extends StatelessWidget {
                         onPressed: dtc.isScanning || !obd.isConnected
                             ? null
                             : () async {
-                                await dtc.scan();
+                                final brand = context
+                                    .read<VehicleProvider>()
+                                    .selectedVehicle
+                                    ?.brandName;
+                                await dtc.scan(brand: brand);
                                 if (dtc.lastError != null) {
                                   messenger.showSnackBar(SnackBar(
                                     backgroundColor: Colors.red.shade900,
@@ -95,7 +100,9 @@ class FaultCodesScreen extends StatelessWidget {
   }
 
   Widget _buildList(DTCProvider dtc) {
-    if (dtc.storedCodes.isEmpty && dtc.pendingCodes.isEmpty) {
+    if (dtc.storedCodes.isEmpty &&
+        dtc.pendingCodes.isEmpty &&
+        dtc.permanentCodes.isEmpty) {
       return Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -125,6 +132,20 @@ class FaultCodesScreen extends StatelessWidget {
           const _SectionHeader(
               title: 'PENDING CODES', color: Color(0xFFFF8C00)),
           ...dtc.pendingCodes.map((c) => DtcCardWidget(dtc: c)),
+        ],
+        if (dtc.permanentCodes.isNotEmpty) ...[
+          const _SectionHeader(
+              title: 'PERMANENT CODES', color: Colors.purpleAccent),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(16, 0, 16, 4),
+            child: Text(
+              'Cannot be cleared with a scanner. The car removes them '
+              'itself after confirming the fault is fixed. If these exist '
+              'with no stored codes, codes were probably cleared recently.',
+              style: TextStyle(color: Colors.white38, fontSize: 11),
+            ),
+          ),
+          ...dtc.permanentCodes.map((c) => DtcCardWidget(dtc: c)),
         ],
         const SizedBox(height: 16),
       ],
